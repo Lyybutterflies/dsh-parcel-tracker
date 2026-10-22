@@ -1,0 +1,15 @@
+# ============================================================================
+# dsh-parcel-tracker —— DSH bundle patch
+# ============================================================================
+# 插件的"挂载声明"。DSH 启动时按 bundle 层栈叠加各插件 patch，
+# 本文件把 dsh-parcel-tracker 插入 Web profile 的配置树。
+#
+# 安装方式：
+#   dsh plugin --profile web add dsh-parcel-tracker
+# 或本地开发安装：
+#   dsh plugin --profile web add link:<本目录绝对路径>
+# ============================================================================
+
+- insert:
+    - id: dsh-parcel-tracker
+      name: dsh-parcel-tracker
